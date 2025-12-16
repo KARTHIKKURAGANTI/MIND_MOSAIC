@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body><div class="container">
+    <h1>MindMosaic</h2>
+    <div class="mood-section">
+        <div class="mood-buttons">
+            <h3>How are you feeling Today?...</h3>
+            <div class="mood">😊</div>
+            <div class="mood">😔</div>
+            <div class="mood">😤</div>
+            <div class="mood">🤩</div>
+            <div class="mood">😴</div>
+        </div>
+    </div>
+    <textarea id="note" placeholder="Write a short note about your day..."></textarea>
+    <label for="productivity">Productivity:<span id="prodValue">5</span>/10</label>
+    <input id="productivity" type="range" min="1" max="10" value="5">
+    <button id="saveBtn" class="save-btn">Save Entry</button>
+    <h2>Your Mood Journal</h2>
+    <div id="entries"></div>
+</div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
